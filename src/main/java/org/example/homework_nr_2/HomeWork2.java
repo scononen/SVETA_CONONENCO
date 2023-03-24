@@ -61,14 +61,14 @@ public class HomeWork2 {
 //        Используйте комбинацию из System.out.println и System.out.print и циклы на вывода на экран фигуры
 
         char star = '*';
-        int read = 0, stolbet = -1;
-        do {stolbet++; for (read =1; read <=stolbet; read++){
+        int read = 1, stolbet = 0;
+        do {stolbet++; for (read =1; read < stolbet; read++){
                 System.out.print(star);
                 }
 
             System.out.println(star);
 
-        } while (stolbet < 8);
+        } while (stolbet < 9);
 
 
     }
