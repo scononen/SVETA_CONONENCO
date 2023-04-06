@@ -31,10 +31,7 @@ public class HomeWork4 {
         float count=0;
         float avarage =0;
         for (int j = 0; j != anotherarray.length; j++) {
-              sum += anotherarray[j];
-        }
-        for (int j = 0; j != anotherarray.length; j++) {
-            count++;
+              sum += anotherarray[j];count++;
         }
         avarage = sum/count;
 
@@ -69,7 +66,7 @@ public class HomeWork4 {
 
             System.out.println(namearray[index]+" ");}
 
-        String [] Otherarray = new String[4];
+        String [] Otherarray = new String[namearray.length];
 
         System.out.println("=============================================================");
 //коирование всех элеменов массива в новый массив
