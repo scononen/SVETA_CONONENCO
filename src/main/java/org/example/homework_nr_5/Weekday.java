@@ -10,7 +10,7 @@ public enum Weekday {
     }
 
     public boolean isWeekday() {
-        if (this == MONDAY || this ==TUESDAY || this ==WEDNESDAY || this ==THURSDAY || this ==FRIDAY )
+        if(this != SATURDAY && this != SUNDAY)
             return true;
         return false;
     }
