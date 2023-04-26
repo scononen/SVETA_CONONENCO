@@ -13,6 +13,6 @@ public interface Animal {
         System.out.println("This animal runs fast");
     };
     default void long_liver() {
-        System.out.println("This animal lives very long animal's live");
+        System.out.println("Using default method from interface");
     }
 }

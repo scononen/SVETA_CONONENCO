@@ -16,6 +16,7 @@ public class Main {
         elephant1.long_liver();
 
 
+
         elephant1.EatGrass();
         elephant1.NotEatMeet();
 

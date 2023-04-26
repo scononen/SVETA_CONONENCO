@@ -25,7 +25,7 @@ public class Elephant extends Erbivor implements Animal {
     }
 
     @Override
-    public void long_liver() {
-        Animal.super.long_liver();
+    public void long_liver() {System.out.println("Elephant lives very long animal's live");
+        }
     }
-}
+
