@@ -36,6 +36,19 @@ public class Main {
         System.out.println(friuts);
         System.out.println("-----------------------------");
 
+        List<String> anotherFriuts =new ArrayList<>();
+        anotherFriuts.add("strawberry");
+        anotherFriuts.add("apple");
+        anotherFriuts.add("plum");
+        anotherFriuts.add("chery");
+        anotherFriuts.add("strawberry");
+        System.out.println(anotherFriuts);
+
+        Set<String> removeDublicates =new HashSet<>(anotherFriuts);
+        System.out.println(removeDublicates);
+
+        System.out.println("-----------------------------");
+
         Map<String, String> EngRomDictionary = new HashMap<>();
         EngRomDictionary.put("grass", "iarbă");
         EngRomDictionary.put("sit","sta");
