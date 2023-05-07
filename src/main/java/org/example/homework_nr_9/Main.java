@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import static java.util.Arrays.*;
+
 public class Main {
     public static void main(String[] args) {
         Employee manager1 = new Manger("Alexei", "Volkov", 5);
@@ -18,9 +20,14 @@ public class Main {
 
         System.out.println("---------------------------------------------------");
 
-        List<Employee> list = new ArrayList<>(Arrays.asList(manager1,programmer1,programmer2));
+        List<VerifyCanConductTraining> training = new ArrayList<>(asList(
+                (VerifyCanConductTraining)programmer1,
+                (VerifyCanConductTraining)manager1,
+                (VerifyCanConductTraining)programmer2
+                ));
 
-        MeetingRoom meet =new MeetingRoom(list);
+
+        MeetingRoom meet =new MeetingRoom(training);
 
                    meet.AttendTraining();
 

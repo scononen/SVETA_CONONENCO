@@ -1,18 +1,19 @@
 package org.example.homework_nr_9;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class MeetingRoom {
-    List<Employee> training;
+    List<VerifyCanConductTraining> training;
 
-    public MeetingRoom(List<Employee> training) {
+    public MeetingRoom(List<VerifyCanConductTraining> training) {
         this.training = training;
     }
 
     void AttendTraining() {
-        for (Employee element :
+        for (VerifyCanConductTraining element :
                 training) {
-            System.out.println(element.getName() + " " + element.getSurname() + " can conduct TRAINING");
+            element.CanConductTraining();
         }
     }
 }
